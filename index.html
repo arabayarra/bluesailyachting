@@ -277,5 +277,18 @@
   </div>
 
   <script src="script.js"></script>
+
+  <!-- Netlify Identity: davet linki / şifre belirleme ve panel girişi -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', user => {
+        // Giriş yapınca ya da davet kabul edilince yönetici paneline yönlendir
+        if (!user) {
+          window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
