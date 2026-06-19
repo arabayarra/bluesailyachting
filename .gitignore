@@ -1,0 +1,9 @@
+# Yerel önizleme / kurulum dosyaları (siteye dahil değil)
+server.js
+deploy/
+*.log
+*.zip
+.claude/
+node_modules/
+.netlify
+.DS_Store

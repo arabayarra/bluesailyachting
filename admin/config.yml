@@ -1,0 +1,110 @@
+# ============================================================
+# Decap CMS yapılandırması — BlueSailYachting yönetim paneli
+# Değişiklikler GitHub'a kaydedilir ve site otomatik güncellenir.
+# ============================================================
+backend:
+  name: git-gateway
+  branch: main
+
+# Yüklenen fotoğrafların kaydedileceği klasör
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "tr"
+
+collections:
+  - name: "site"
+    label: "Site İçeriği"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "icerik"
+        label: "Tüm Site İçeriği"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          # ---------------- HERO ----------------
+          - label: "Giriş Bölümü (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Başlık (Türkçe)", name: "title_tr", widget: "string" }
+              - { label: "Başlık (İngilizce)", name: "title_en", widget: "string" }
+              - { label: "Alt Başlık (Türkçe)", name: "subtitle_tr", widget: "text" }
+              - { label: "Alt Başlık (İngilizce)", name: "subtitle_en", widget: "text" }
+              - { label: "Arka Plan Fotoğrafı", name: "image", widget: "image" }
+
+          # ---------------- HAKKIMIZDA ----------------
+          - label: "Hakkımızda"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Başlık (Türkçe)", name: "title_tr", widget: "string" }
+              - { label: "Başlık (İngilizce)", name: "title_en", widget: "string" }
+              - { label: "1. Paragraf (Türkçe)", name: "p1_tr", widget: "text" }
+              - { label: "1. Paragraf (İngilizce)", name: "p1_en", widget: "text" }
+              - { label: "2. Paragraf (Türkçe)", name: "p2_tr", widget: "text" }
+              - { label: "2. Paragraf (İngilizce)", name: "p2_en", widget: "text" }
+              - { label: "Fotoğraf", name: "image", widget: "image" }
+
+          # ---------------- İLETİŞİM ----------------
+          - label: "İletişim Bilgileri"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Adres (Türkçe)", name: "address_tr", widget: "string" }
+              - { label: "Adres (İngilizce)", name: "address_en", widget: "string" }
+              - { label: "Telefon", name: "phone", widget: "string" }
+              - { label: "E-posta", name: "email", widget: "string" }
+
+          # ---------------- YATLAR ----------------
+          - label: "Yatlar"
+            name: "yachts"
+            widget: "list"
+            label_singular: "Yat"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Yat Adı", name: "name", widget: "string" }
+              - { label: "Etiket (Türkçe)", name: "tag_tr", widget: "string", hint: "Örn: En Popüler, Lüks, Yeni" }
+              - { label: "Etiket (İngilizce)", name: "tag_en", widget: "string" }
+              - { label: "Fotoğraf", name: "image", widget: "image" }
+              - { label: "Açıklama (Türkçe)", name: "desc_tr", widget: "text" }
+              - { label: "Açıklama (İngilizce)", name: "desc_en", widget: "text" }
+              - { label: "Fiyat", name: "price", widget: "string", hint: "Örn: €4.500" }
+              - { label: "Uzunluk", name: "length", widget: "string", hint: "Örn: 32 m" }
+              - { label: "Misafir Kapasitesi", name: "guests", widget: "string" }
+              - { label: "Kamara Sayısı", name: "cabins", widget: "string" }
+              - { label: "Mürettebat", name: "crew", widget: "string" }
+              - { label: "Hız", name: "speed", widget: "string", hint: "Örn: 24 knot" }
+              - { label: "Yapım Yılı", name: "year", widget: "string" }
+              - { label: "Olanaklar (Türkçe)", name: "amenities_tr", widget: "string", hint: "Virgülle ayırın" }
+              - { label: "Olanaklar (İngilizce)", name: "amenities_en", widget: "string", hint: "Virgülle ayırın" }
+
+          # ---------------- KAMARALAR ----------------
+          - label: "Kamaralar"
+            name: "cabins"
+            widget: "list"
+            label_singular: "Kamara"
+            summary: "{{fields.name_tr}}"
+            fields:
+              - { label: "İsim (Türkçe)", name: "name_tr", widget: "string" }
+              - { label: "İsim (İngilizce)", name: "name_en", widget: "string" }
+              - { label: "Fotoğraf", name: "image", widget: "image" }
+              - { label: "Açıklama (Türkçe)", name: "desc_tr", widget: "text" }
+              - { label: "Açıklama (İngilizce)", name: "desc_en", widget: "text" }
+              - { label: "Özellikler (Türkçe)", name: "features_tr", widget: "string", hint: "Virgülle ayırın: King yatak, Özel banyo..." }
+              - { label: "Özellikler (İngilizce)", name: "features_en", widget: "string", hint: "Virgülle ayırın" }
+
+          # ---------------- NEDEN BİZ ----------------
+          - label: "Neden Bizi Seçmelisiniz"
+            name: "features"
+            widget: "list"
+            label_singular: "Avantaj"
+            summary: "{{fields.title_tr}}"
+            fields:
+              - { label: "İkon (emoji)", name: "icon", widget: "string", hint: "Örn: ⚓ 🛟 🧭 🛡️ ✨ 💎" }
+              - { label: "Başlık (Türkçe)", name: "title_tr", widget: "string" }
+              - { label: "Başlık (İngilizce)", name: "title_en", widget: "string" }
+              - { label: "Açıklama (Türkçe)", name: "desc_tr", widget: "text" }
+              - { label: "Açıklama (İngilizce)", name: "desc_en", widget: "text" }

@@ -1,0 +1,126 @@
+{
+  "hero": {
+    "title_tr": "Denizin Sınırsız Lüksünü Keşfedin",
+    "title_en": "Discover the Boundless Luxury of the Sea",
+    "subtitle_tr": "Özenle seçilmiş premium filomuz, profesyonel mürettebatımız ve kusursuz hizmetimizle unutulmaz bir deniz tatili sizi bekliyor.",
+    "subtitle_en": "An unforgettable sea holiday awaits you with our handpicked premium fleet, professional crew and impeccable service.",
+    "image": "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1920&q=80"
+  },
+  "about": {
+    "title_tr": "15 Yıldır Mavi Yolculuğun Adresi",
+    "title_en": "Your Blue Voyage Destination for 15 Years",
+    "p1_tr": "BlueSailYachting, 2010 yılından bu yana Akdeniz ve Ege'nin en güzel koylarında misafirlerine eşsiz bir lüks deneyimi sunuyor. Her detayı titizlikle planlanan yolculuklarımızda konfor, güvenlik ve zarafet bir araya geliyor.",
+    "p1_en": "Since 2010, BlueSailYachting has offered guests a unique luxury experience in the most beautiful bays of the Mediterranean and the Aegean. Comfort, safety and elegance come together on our meticulously planned voyages.",
+    "p2_tr": "Modern filomuz, deneyimli mürettebatımız ve kişiye özel hizmet anlayışımızla, hayalinizdeki deniz tatilini gerçeğe dönüştürüyoruz.",
+    "p2_en": "With our modern fleet, experienced crew and bespoke service, we turn your dream sea holiday into reality.",
+    "image": "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=1000&q=80"
+  },
+  "contact": {
+    "address_tr": "Yalıkavak Marina, Bodrum, Türkiye",
+    "address_en": "Yalikavak Marina, Bodrum, Türkiye",
+    "phone": "+90 252 000 00 00",
+    "email": "info@bluesailyachting.com"
+  },
+  "yachts": [
+    {
+      "name": "Azure Dream",
+      "tag_tr": "En Popüler", "tag_en": "Most Popular",
+      "image": "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=900&q=80",
+      "desc_tr": "Geniş güverte alanı ve modern iç tasarımıyla aileler ve gruplar için ideal motor yat.",
+      "desc_en": "A motor yacht ideal for families and groups, with spacious deck areas and a modern interior.",
+      "price": "€4.500",
+      "length": "32 m", "guests": "12", "cabins": "5", "crew": "4", "speed": "24 knot", "year": "2021",
+      "amenities_tr": "Jakuzi, su sporları, klima, Wi-Fi",
+      "amenities_en": "Jacuzzi, water sports, A/C, Wi-Fi"
+    },
+    {
+      "name": "Golden Horizon",
+      "tag_tr": "Lüks", "tag_en": "Luxury",
+      "image": "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=900&q=80",
+      "desc_tr": "Zarif çizgileri ve gurme mutfağıyla unutulmaz bir lüks deneyim sunan süper yat.",
+      "desc_en": "A superyacht offering an unforgettable luxury experience with elegant lines and gourmet cuisine.",
+      "price": "€8.900",
+      "length": "45 m", "guests": "10", "cabins": "5", "crew": "7", "speed": "20 knot", "year": "2022",
+      "amenities_tr": "Sinema, spa, jet ski, beach club",
+      "amenities_en": "Cinema, spa, jet ski, beach club"
+    },
+    {
+      "name": "Sea Breeze",
+      "tag_tr": "Yelkenli", "tag_en": "Sailing",
+      "image": "https://images.unsplash.com/photo-1540946485063-a40da27545f8?auto=format&fit=crop&w=900&q=80",
+      "desc_tr": "Rüzgârın gücüyle sakin koyları keşfetmek isteyenler için klasik bir yelkenli gulet.",
+      "desc_en": "A classic sailing gulet for those who want to explore calm bays with the power of the wind.",
+      "price": "€2.800",
+      "length": "28 m", "guests": "8", "cabins": "4", "crew": "3", "speed": "12 knot", "year": "2019",
+      "amenities_tr": "Güneş güvertesi, şnorkel, klima",
+      "amenities_en": "Sun deck, snorkeling, A/C"
+    },
+    {
+      "name": "Royal Pearl",
+      "tag_tr": "Premium", "tag_en": "Premium",
+      "image": "https://images.unsplash.com/photo-1559599189-fe84dea4eb79?auto=format&fit=crop&w=900&q=80",
+      "desc_tr": "Geniş ana salonu ve flybridge alanıyla sosyal etkinlikler için mükemmel bir tercih.",
+      "desc_en": "A perfect choice for social gatherings with its large main saloon and flybridge area.",
+      "price": "€6.200",
+      "length": "38 m", "guests": "12", "cabins": "6", "crew": "5", "speed": "22 knot", "year": "2020",
+      "amenities_tr": "Flybridge bar, jakuzi, su sporları",
+      "amenities_en": "Flybridge bar, jacuzzi, water sports"
+    },
+    {
+      "name": "Blue Marlin",
+      "tag_tr": "Sportif", "tag_en": "Sporty",
+      "image": "https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=900&q=80",
+      "desc_tr": "Yüksek hızı ve dinamik tasarımıyla macera tutkunları için ideal sport yat.",
+      "desc_en": "A sport yacht ideal for adventure lovers with its high speed and dynamic design.",
+      "price": "€3.900",
+      "length": "26 m", "guests": "8", "cabins": "3", "crew": "3", "speed": "32 knot", "year": "2023",
+      "amenities_tr": "Su kayağı, wakeboard, ses sistemi",
+      "amenities_en": "Water ski, wakeboard, sound system"
+    },
+    {
+      "name": "Serenity",
+      "tag_tr": "Yeni", "tag_en": "New",
+      "image": "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=900&q=80&sat=-20",
+      "desc_tr": "Minimalist iç tasarımı ve sessiz seyriyle huzur arayanlar için tasarlandı.",
+      "desc_en": "Designed for those seeking peace, with a minimalist interior and quiet cruising.",
+      "price": "€5.400",
+      "length": "35 m", "guests": "10", "cabins": "5", "crew": "4", "speed": "18 knot", "year": "2024",
+      "amenities_tr": "Yoga güvertesi, spa, sessiz motor",
+      "amenities_en": "Yoga deck, spa, silent engine"
+    }
+  ],
+  "cabins": [
+    {
+      "name_tr": "Master Süit", "name_en": "Master Suite",
+      "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
+      "desc_tr": "Panoramik deniz manzaralı, geniş ve ışıltılı sahibinin kamarası.",
+      "desc_en": "A spacious, light-filled owner's cabin with panoramic sea views.",
+      "features_tr": "King yatak, Özel banyo, Çalışma alanı, Mini bar",
+      "features_en": "King bed, Ensuite bath, Work area, Mini bar"
+    },
+    {
+      "name_tr": "VIP Kamara", "name_en": "VIP Cabin",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
+      "desc_tr": "Konfor ve şıklığı bir araya getiren, çiftler için ideal kamara.",
+      "desc_en": "An ideal cabin for couples, combining comfort and elegance.",
+      "features_tr": "Queen yatak, Özel banyo, Klima, Smart TV",
+      "features_en": "Queen bed, Ensuite bath, A/C, Smart TV"
+    },
+    {
+      "name_tr": "İkiz Kamara", "name_en": "Twin Cabin",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+      "desc_tr": "İki ayrı yatak seçeneğiyle arkadaş grupları için pratik konfor.",
+      "desc_en": "Practical comfort for groups of friends with two separate beds.",
+      "features_tr": "2 tek yatak, Özel banyo, Depolama, Wi-Fi",
+      "features_en": "2 single beds, Ensuite bath, Storage, Wi-Fi"
+    }
+  ],
+  "features": [
+    { "icon": "⚓", "title_tr": "Profesyonel Mürettebat", "title_en": "Professional Crew", "desc_tr": "Deneyimli kaptan, gurme şef ve güler yüzlü ekiple kusursuz hizmet.", "desc_en": "Impeccable service with an experienced captain, gourmet chef and friendly team." },
+    { "icon": "🛟", "title_tr": "7/24 Destek", "title_en": "24/7 Support", "desc_tr": "Yolculuğunuz boyunca kesintisiz iletişim ve anında çözüm.", "desc_en": "Uninterrupted communication and instant solutions throughout your voyage." },
+    { "icon": "🧭", "title_tr": "Esnek Rotalar", "title_en": "Flexible Routes", "desc_tr": "Hayalinizdeki koyları belirleyin, rotayı birlikte tasarlayalım.", "desc_en": "Choose your dream bays and let us design the route together." },
+    { "icon": "🛡️", "title_tr": "Tam Sigorta", "title_en": "Full Insurance", "desc_tr": "Tüm yatlarımız kapsamlı sigorta güvencesi altındadır.", "desc_en": "All our yachts are under comprehensive insurance coverage." },
+    { "icon": "✨", "title_tr": "Premium Hizmet", "title_en": "Premium Service", "desc_tr": "Karşılama ikramından özel etkinliklere her detay düşünülmüş.", "desc_en": "Every detail considered, from welcome treats to private events." },
+    { "icon": "💎", "title_tr": "En İyi Fiyat Garantisi", "title_en": "Best Price Guarantee", "desc_tr": "Şeffaf fiyatlandırma ve gizli ücret olmadan en iyi değer.", "desc_en": "Transparent pricing and the best value with no hidden fees." }
+  ]
+}

@@ -1,0 +1,10 @@
+# Netlify yapılandırması
+# Site derleme gerektirmeyen statik dosyalardan oluşur; kök klasör yayınlanır.
+[build]
+  publish = "."
+
+# Decap CMS yönetici paneline doğrudan erişim
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

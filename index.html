@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueSailYachting — Lüks Yat Kiralama</title>
+  <meta name="description" content="BlueSailYachting — Akdeniz ve Ege'de premium lüks yat kiralama. Detaylı yat özellikleri, kamara seçenekleri ve online rezervasyon." />
+
+  <!-- Google Fonts: Playfair Display (başlık) + Inter (gövde) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="brand">
+        <span class="brand__mark">⚓</span>
+        <span class="brand__text">BlueSail<span class="brand__accent">Yachting</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about"   data-i18n="nav_about">Hakkımızda</a>
+        <a href="#fleet"   data-i18n="nav_fleet">Yatlarımız</a>
+        <a href="#cabins"  data-i18n="nav_cabins">Kamaralarımız</a>
+        <a href="#why"     data-i18n="nav_why">Neden Biz</a>
+        <a href="#booking" data-i18n="nav_booking">Rezervasyon</a>
+        <a href="#contact" data-i18n="nav_contact">İletişim</a>
+      </nav>
+
+      <div class="nav__right">
+        <!-- Dil seçimi: bayraklar -->
+        <div class="lang" role="group" aria-label="Language switch">
+          <button class="lang__btn" data-lang="tr" title="Türkçe" aria-label="Türkçe">
+            <!-- Türk bayrağı -->
+            <svg viewBox="0 0 30 20" width="30" height="20" aria-hidden="true">
+              <rect width="30" height="20" fill="#E30A17"/>
+              <circle cx="11" cy="10" r="5" fill="#fff"/>
+              <circle cx="12.5" cy="10" r="4" fill="#E30A17"/>
+              <path fill="#fff" d="M16.8 10l4.2-1.4-2.6 3.6V7.8l2.6 3.6z"/>
+            </svg>
+          </button>
+          <button class="lang__btn" data-lang="en" title="English" aria-label="English">
+            <!-- İngiliz bayrağı (Union Jack) -->
+            <svg viewBox="0 0 30 20" width="30" height="20" aria-hidden="true">
+              <clipPath id="uk"><rect width="30" height="20"/></clipPath>
+              <g clip-path="url(#uk)">
+                <rect width="30" height="20" fill="#012169"/>
+                <path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/>
+                <path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="2"/>
+                <path d="M15 0V20M0 10H30" stroke="#fff" stroke-width="6"/>
+                <path d="M15 0V20M0 10H30" stroke="#C8102E" stroke-width="3"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <a href="#booking" class="btn btn--small" data-i18n="nav_cta">Rezervasyon</a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <p class="hero__eyebrow reveal" data-i18n="hero_eyebrow">AKDENİZ & EGE • LÜKS YAT KİRALAMA</p>
+      <h1 class="hero__title reveal" id="heroTitle">Denizin Sınırsız Lüksünü Keşfedin</h1>
+      <p class="hero__subtitle reveal" id="heroSubtitle">
+        Özenle seçilmiş premium filomuz, profesyonel mürettebatımız ve kusursuz hizmetimizle
+        unutulmaz bir deniz tatili sizi bekliyor.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#booking" class="btn btn--gold" data-i18n="hero_cta1">Hemen Kirala</a>
+        <a href="#fleet" class="btn btn--ghost" data-i18n="hero_cta2">Filomuzu Keşfet</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="scroll">↓</a>
+  </section>
+
+  <!-- ============ HAKKIMIZDA ============ -->
+  <section class="section" id="about">
+    <div class="container about">
+      <div class="about__text reveal">
+        <p class="eyebrow" data-i18n="about_eyebrow">HAKKIMIZDA</p>
+        <h2 class="section__title" id="aboutTitle">15 Yıldır Mavi Yolculuğun Adresi</h2>
+        <p id="aboutP1">
+          BlueSailYachting, 2010 yılından bu yana Akdeniz ve Ege'nin en güzel koylarında
+          misafirlerine eşsiz bir lüks deneyimi sunuyor. Her detayı titizlikle planlanan
+          yolculuklarımızda konfor, güvenlik ve zarafet bir araya geliyor.
+        </p>
+        <p id="aboutP2">
+          Modern filomuz, deneyimli mürettebatımız ve kişiye özel hizmet anlayışımızla,
+          hayalinizdeki deniz tatilini gerçeğe dönüştürüyoruz.
+        </p>
+        <div class="stats">
+          <div class="stat"><span class="stat__num" data-count="48">0</span><span class="stat__label" data-i18n="stat_yachts">Premium Yat</span></div>
+          <div class="stat"><span class="stat__num" data-count="12000">0</span><span class="stat__label" data-i18n="stat_guests">Mutlu Misafir</span></div>
+          <div class="stat"><span class="stat__num" data-count="60">0</span><span class="stat__label" data-i18n="stat_routes">Rota</span></div>
+          <div class="stat"><span class="stat__num" data-count="15">0</span><span class="stat__label" data-i18n="stat_years">Yıllık Tecrübe</span></div>
+        </div>
+      </div>
+      <div class="about__img reveal">
+        <img id="aboutImg" src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?auto=format&fit=crop&w=1000&q=80" alt="Lüks yat" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ YATLARIMIZ ============ -->
+  <section class="section section--alt" id="fleet">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow" data-i18n="fleet_eyebrow">FİLOMUZ</p>
+        <h2 class="section__title" data-i18n="fleet_title">Yatlarımız</h2>
+        <p class="section__lead" data-i18n="fleet_lead">Her biri özenle seçilmiş, donanımlı ve konforlu premium yatlarımızı keşfedin.</p>
+      </div>
+      <div class="fleet" id="fleetGrid"><!-- JS ile doldurulur --></div>
+    </div>
+  </section>
+
+  <!-- ============ KAMARALARIMIZ ============ -->
+  <section class="section" id="cabins">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow" data-i18n="cabins_eyebrow">KONFOR</p>
+        <h2 class="section__title" data-i18n="cabins_title">Kamaralarımız</h2>
+        <p class="section__lead" data-i18n="cabins_lead">Her bütçeye ve zevke uygun, zarafetle tasarlanmış kamara seçenekleri.</p>
+      </div>
+      <div class="cabins" id="cabinsGrid"><!-- JS ile doldurulur --></div>
+    </div>
+  </section>
+
+  <!-- ============ NEDEN BİZİ SEÇMELİSİNİZ ============ -->
+  <section class="section section--dark" id="why">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--gold" data-i18n="why_eyebrow">AYRICALIK</p>
+        <h2 class="section__title" data-i18n="why_title">Neden Bizi Seçmelisiniz?</h2>
+      </div>
+      <div class="why" id="whyGrid"><!-- JS ile doldurulur --></div>
+    </div>
+  </section>
+
+  <!-- ============ REZERVASYON ============ -->
+  <section class="section" id="booking">
+    <div class="container booking">
+      <div class="booking__info reveal">
+        <p class="eyebrow" data-i18n="booking_eyebrow">REZERVASYON</p>
+        <h2 class="section__title" data-i18n="booking_title">Yolculuğunuzu Planlayın</h2>
+        <p data-i18n="booking_lead">
+          Formu doldurun, uzman ekibimiz 24 saat içinde size özel teklifle dönüş yapsın.
+          Esnek tarihler, kişiye özel rotalar ve tam sigorta güvencesi.
+        </p>
+        <ul class="booking__points">
+          <li data-i18n="booking_point1">✓ Ücretsiz iptal (kalkıştan 14 gün önce)</li>
+          <li data-i18n="booking_point2">✓ Profesyonel kaptan ve mürettebat dahil</li>
+          <li data-i18n="booking_point3">✓ Tam kapsamlı sigorta</li>
+        </ul>
+      </div>
+
+      <form class="booking__form reveal" id="bookingForm" novalidate>
+        <div class="field">
+          <label data-i18n="form_name">Ad Soyad</label>
+          <input type="text" name="name" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label data-i18n="form_email">E-posta</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="field">
+            <label data-i18n="form_phone">Telefon</label>
+            <input type="tel" name="phone" required />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label data-i18n="form_start">Başlangıç Tarihi</label>
+            <input type="date" name="start" required />
+          </div>
+          <div class="field">
+            <label data-i18n="form_end">Bitiş Tarihi</label>
+            <input type="date" name="end" required />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label data-i18n="form_guests">Misafir Sayısı</label>
+            <input type="number" name="guests" min="1" max="40" value="2" required />
+          </div>
+          <div class="field">
+            <label data-i18n="form_yacht">Yat Seçimi</label>
+            <select name="yacht" id="formYacht"></select>
+          </div>
+        </div>
+        <div class="field">
+          <label data-i18n="form_port">Kalkış Limanı / Rota</label>
+          <input type="text" name="port" placeholder="Bodrum, Göcek, Fethiye..." />
+        </div>
+        <div class="field">
+          <label data-i18n="form_message">Notunuz</label>
+          <textarea name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn--gold btn--full" data-i18n="form_submit">Teklif İste</button>
+        <p class="form__success" id="formSuccess" data-i18n="form_success" hidden>
+          Talebiniz alındı! Ekibimiz en kısa sürede sizinle iletişime geçecek.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ İLETİŞİM & FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#hero" class="brand brand--light">
+          <span class="brand__mark">⚓</span>
+          <span class="brand__text">BlueSail<span class="brand__accent">Yachting</span></span>
+        </a>
+        <p class="footer__about" data-i18n="footer_about">
+          Akdeniz ve Ege'de premium lüks yat kiralama. Hayalinizdeki mavi yolculuk bizimle başlasın.
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_links">Hızlı Menü</h4>
+        <a href="#about"  data-i18n="nav_about">Hakkımızda</a>
+        <a href="#fleet"  data-i18n="nav_fleet">Yatlarımız</a>
+        <a href="#cabins" data-i18n="nav_cabins">Kamaralarımız</a>
+        <a href="#booking" data-i18n="nav_booking">Rezervasyon</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_contact">İletişim</h4>
+        <p>📍 <span id="contactAddress">Yalıkavak Marina, Bodrum, Türkiye</span></p>
+        <p>📞 <span id="contactPhone">+90 252 000 00 00</span></p>
+        <p>✉️ <span id="contactEmail">info@bluesailyachting.com</span></p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer_hours">Çalışma Saatleri</h4>
+        <p data-i18n="footer_hours_val">Her gün 09:00 – 21:00</p>
+        <p data-i18n="footer_support">7/24 acil destek hattı</p>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <span>© 2026 BlueSailYachting. <span data-i18n="footer_rights">Tüm hakları saklıdır.</span></span>
+    </div>
+  </footer>
+
+  <!-- ============ YAT DETAY MODAL ============ -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box" role="dialog" aria-modal="true">
+      <button class="modal__close" data-close aria-label="Kapat">×</button>
+      <div class="modal__media"><img id="modalImg" src="" alt="" /></div>
+      <div class="modal__body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <ul class="specs" id="modalSpecs"></ul>
+        <div class="modal__price">
+          <div><span class="modal__price-num" id="modalPrice"></span><span class="modal__price-unit" data-i18n="per_day">/ gün</span></div>
+          <a href="#booking" class="btn btn--gold" data-close data-i18n="modal_book">Bu Yatı Kirala</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
